@@ -1,0 +1,29 @@
+{
+    "name": "replay_tuning",
+    "configs": [
+        {
+            "name": "buffer_1000",
+            "buffer_size": 1000,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "buffer_2000",
+            "buffer_size": 2000,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "buffer_5000",
+            "buffer_size": 5000,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "buffer_10000",
+            "buffer_size": 10000,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        }
+    ]
+}

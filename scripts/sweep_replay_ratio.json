@@ -1,0 +1,29 @@
+{
+    "name": "replay_ratio",
+    "configs": [
+        {
+            "name": "ratio_0.0",
+            "replay_ratio": 0.0,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "ratio_0.25",
+            "replay_ratio": 0.25,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "ratio_0.5",
+            "replay_ratio": 0.5,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "ratio_0.75",
+            "replay_ratio": 0.75,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        }
+    ]
+}

@@ -1,0 +1,2658 @@
+{
+    "n_tasks": 5,
+    "acc_matrix": [
+        [
+            33.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            25.5,
+            21.5,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            16.5,
+            13.0,
+            22.0,
+            0.0,
+            0.0
+        ],
+        [
+            13.5,
+            14.5,
+            14.0,
+            29.0,
+            0.0
+        ],
+        [
+            9.5,
+            11.5,
+            6.5,
+            11.5,
+            23.0
+        ]
+    ],
+    "acc_history": {
+        "0": [
+            [
+                31,
+                16.0
+            ],
+            [
+                50,
+                18.5
+            ],
+            [
+                62,
+                24.5
+            ],
+            [
+                93,
+                33.0
+            ],
+            [
+                124,
+                13.0
+            ],
+            [
+                143,
+                24.0
+            ],
+            [
+                155,
+                22.0
+            ],
+            [
+                186,
+                25.5
+            ],
+            [
+                217,
+                11.5
+            ],
+            [
+                236,
+                13.5
+            ],
+            [
+                248,
+                11.0
+            ],
+            [
+                279,
+                16.5
+            ],
+            [
+                310,
+                7.5
+            ],
+            [
+                329,
+                9.5
+            ],
+            [
+                341,
+                6.0
+            ],
+            [
+                372,
+                13.5
+            ],
+            [
+                403,
+                11.5
+            ],
+            [
+                422,
+                10.0
+            ],
+            [
+                434,
+                4.5
+            ],
+            [
+                465,
+                9.5
+            ]
+        ],
+        "1": [
+            [
+                124,
+                15.0
+            ],
+            [
+                143,
+                14.0
+            ],
+            [
+                155,
+                14.5
+            ],
+            [
+                186,
+                21.5
+            ],
+            [
+                217,
+                19.0
+            ],
+            [
+                236,
+                10.5
+            ],
+            [
+                248,
+                11.5
+            ],
+            [
+                279,
+                13.0
+            ],
+            [
+                310,
+                8.5
+            ],
+            [
+                329,
+                7.0
+            ],
+            [
+                341,
+                10.0
+            ],
+            [
+                372,
+                14.5
+            ],
+            [
+                403,
+                9.0
+            ],
+            [
+                422,
+                3.0
+            ],
+            [
+                434,
+                7.5
+            ],
+            [
+                465,
+                11.5
+            ]
+        ],
+        "2": [
+            [
+                217,
+                12.0
+            ],
+            [
+                236,
+                22.0
+            ],
+            [
+                248,
+                19.0
+            ],
+            [
+                279,
+                22.0
+            ],
+            [
+                310,
+                5.0
+            ],
+            [
+                329,
+                10.5
+            ],
+            [
+                341,
+                6.0
+            ],
+            [
+                372,
+                14.0
+            ],
+            [
+                403,
+                5.5
+            ],
+            [
+                422,
+                0.5
+            ],
+            [
+                434,
+                4.0
+            ],
+            [
+                465,
+                6.5
+            ]
+        ],
+        "3": [
+            [
+                310,
+                17.5
+            ],
+            [
+                329,
+                30.0
+            ],
+            [
+                341,
+                23.5
+            ],
+            [
+                372,
+                29.0
+            ],
+            [
+                403,
+                8.5
+            ],
+            [
+                422,
+                7.0
+            ],
+            [
+                434,
+                8.0
+            ],
+            [
+                465,
+                11.5
+            ]
+        ],
+        "4": [
+            [
+                403,
+                20.0
+            ],
+            [
+                422,
+                22.5
+            ],
+            [
+                434,
+                21.5
+            ],
+            [
+                465,
+                23.0
+            ]
+        ]
+    },
+    "task_switch_steps": [
+        {
+            "from_task": 0,
+            "to_task": 1,
+            "global_step": 93
+        },
+        {
+            "from_task": 1,
+            "to_task": 2,
+            "global_step": 186
+        },
+        {
+            "from_task": 2,
+            "to_task": 3,
+            "global_step": 279
+        },
+        {
+            "from_task": 3,
+            "to_task": 4,
+            "global_step": 372
+        }
+    ],
+    "metric_history": {
+        "0": {
+            "loss": 2.4474780405721357,
+            "ce_loss": 2.4474780405721357,
+            "prox_loss": 0.0,
+            "kl_loss": 0,
+            "kl_value": 0,
+            "kl_beta": 0,
+            "rho": 0.0,
+            "delta": 0.0,
+            "delta_ema": 0.0,
+            "param_norm": 79.99895172004638
+        },
+        "1": {
+            "loss": 2.8379377165148334,
+            "ce_loss": 2.702255548969392,
+            "prox_loss": 0.1356821685068069,
+            "kl_loss": 0,
+            "kl_value": 0,
+            "kl_beta": 0,
+            "rho": 0.0,
+            "delta": 0.0,
+            "delta_ema": 0.0,
+            "param_norm": 79.86242490210516
+        },
+        "2": {
+            "loss": 3.0066593770057923,
+            "ce_loss": 2.8260223557872157,
+            "prox_loss": 0.18063701593106793,
+            "kl_loss": 0,
+            "kl_value": 0,
+            "kl_beta": 0,
+            "rho": 0.0,
+            "delta": 0.0,
+            "delta_ema": 0.0,
+            "param_norm": 79.74441544298136
+        },
+        "3": {
+            "loss": 3.1266456496331,
+            "ce_loss": 2.9385423121913785,
+            "prox_loss": 0.18810334465196055,
+            "kl_loss": 0,
+            "kl_value": 0,
+            "kl_beta": 0,
+            "rho": 0.0,
+            "delta": 0.0,
+            "delta_ema": 0.0,
+            "param_norm": 79.63066180751562
+        },
+        "4": {
+            "loss": 3.2307282493960474,
+            "ce_loss": 3.03887838702048,
+            "prox_loss": 0.19184985324259726,
+            "kl_loss": 0,
+            "kl_value": 0,
+            "kl_beta": 0,
+            "rho": 0.0,
+            "delta": 0.0,
+            "delta_ema": 0.0,
+            "param_norm": 79.52386324950709
+        }
+    },
+    "eval_every_n_batches": 50,
+    "config": {
+        "data_root": "./data",
+        "output_dir": "results/debug",
+        "seed": 4201,
+        "n_tasks": 5,
+        "batch_size": 64,
+        "epochs": 3,
+        "lr": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "lambda_prox": 0.1,
+        "lambda_schedule": "inc_linear",
+        "lambda_warmup_power": 1.0,
+        "prox_start_epoch": 0,
+        "prox_backbone_only": true,
+        "prox_exclude_bn": true,
+        "use_sam": false,
+        "sam_epochs": 1,
+        "sam_phase": "last",
+        "rho_base": 0.5,
+        "sam_bn_mode": "momentum0",
+        "sam_batch_mode": "split",
+        "use_kl_tr": false,
+        "kl_beta_init": 0.1,
+        "kl_temp": 1.0,
+        "kl_value_clip": 10.0,
+        "kl_source": "mem",
+        "kl_start_epoch": 0,
+        "use_coupling": false,
+        "coupling_mode": "grad_ratio",
+        "delta_gamma": null,
+        "delta_ema_beta": 0.1,
+        "grad_ratio_beta": 0.5,
+        "grad_ratio_eps": 1e-12,
+        "debug_prox": true,
+        "debug_sam": false,
+        "debug_every_n_steps": 1,
+        "recovery_window": 500,
+        "recovery_scale": 0.95,
+        "eval_every_n_batches": 50,
+        "buffer_size": 5000,
+        "replay_ratio": 0.5,
+        "use_decoupled": false,
+        "grad_ratio_alpha": 0.5,
+        "train_per_task": 1000,
+        "test_per_task": 200
+    },
+    "debug_records": [
+        {
+            "global_step": 125,
+            "step_in_task": 32,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.1874043604961253
+        },
+        {
+            "global_step": 126,
+            "step_in_task": 33,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.210265782388104
+        },
+        {
+            "global_step": 127,
+            "step_in_task": 34,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.231394698277355
+        },
+        {
+            "global_step": 128,
+            "step_in_task": 35,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.2506853227312247
+        },
+        {
+            "global_step": 129,
+            "step_in_task": 36,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.269197633263661
+        },
+        {
+            "global_step": 130,
+            "step_in_task": 37,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.287363051971123
+        },
+        {
+            "global_step": 131,
+            "step_in_task": 38,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.3054218112082192
+        },
+        {
+            "global_step": 132,
+            "step_in_task": 39,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.3223612277462433
+        },
+        {
+            "global_step": 133,
+            "step_in_task": 40,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.3388392927573611
+        },
+        {
+            "global_step": 134,
+            "step_in_task": 41,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.3545706252851735
+        },
+        {
+            "global_step": 135,
+            "step_in_task": 42,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.3706665613212052
+        },
+        {
+            "global_step": 136,
+            "step_in_task": 43,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.3865825969049068
+        },
+        {
+            "global_step": 137,
+            "step_in_task": 44,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4024299011358872
+        },
+        {
+            "global_step": 138,
+            "step_in_task": 45,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4173274797013085
+        },
+        {
+            "global_step": 139,
+            "step_in_task": 46,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4303741174289448
+        },
+        {
+            "global_step": 140,
+            "step_in_task": 47,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.443185988788946
+        },
+        {
+            "global_step": 141,
+            "step_in_task": 48,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.455380847022559
+        },
+        {
+            "global_step": 142,
+            "step_in_task": 49,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4676491138396852
+        },
+        {
+            "global_step": 143,
+            "step_in_task": 50,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4802138309127233
+        },
+        {
+            "global_step": 144,
+            "step_in_task": 51,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4924771448452925
+        },
+        {
+            "global_step": 145,
+            "step_in_task": 52,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5039829689744755
+        },
+        {
+            "global_step": 146,
+            "step_in_task": 53,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5144106526405183
+        },
+        {
+            "global_step": 147,
+            "step_in_task": 54,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.525100640147885
+        },
+        {
+            "global_step": 148,
+            "step_in_task": 55,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.536232013251787
+        },
+        {
+            "global_step": 149,
+            "step_in_task": 56,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5480558326783527
+        },
+        {
+            "global_step": 150,
+            "step_in_task": 57,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5603913016588302
+        },
+        {
+            "global_step": 151,
+            "step_in_task": 58,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5730425212469257
+        },
+        {
+            "global_step": 152,
+            "step_in_task": 59,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5850378873952191
+        },
+        {
+            "global_step": 153,
+            "step_in_task": 60,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5966610994919381
+        },
+        {
+            "global_step": 154,
+            "step_in_task": 61,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6076946658606255
+        },
+        {
+            "global_step": 155,
+            "step_in_task": 62,
+            "task_id": 1,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6192728979060338
+        },
+        {
+            "global_step": 156,
+            "step_in_task": 63,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6306082486492628
+        },
+        {
+            "global_step": 157,
+            "step_in_task": 64,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.634040833071671
+        },
+        {
+            "global_step": 158,
+            "step_in_task": 65,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6367749862296135
+        },
+        {
+            "global_step": 159,
+            "step_in_task": 66,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6390748846960785
+        },
+        {
+            "global_step": 160,
+            "step_in_task": 67,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6407848141238912
+        },
+        {
+            "global_step": 161,
+            "step_in_task": 68,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.64230492902005
+        },
+        {
+            "global_step": 162,
+            "step_in_task": 69,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6436107753990994
+        },
+        {
+            "global_step": 163,
+            "step_in_task": 70,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.64468127441886
+        },
+        {
+            "global_step": 164,
+            "step_in_task": 71,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6453673070693735
+        },
+        {
+            "global_step": 165,
+            "step_in_task": 72,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6459060707698407
+        },
+        {
+            "global_step": 166,
+            "step_in_task": 73,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6462647533669874
+        },
+        {
+            "global_step": 167,
+            "step_in_task": 74,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6468704699729058
+        },
+        {
+            "global_step": 168,
+            "step_in_task": 75,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6472758605825375
+        },
+        {
+            "global_step": 169,
+            "step_in_task": 76,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.647910156069603
+        },
+        {
+            "global_step": 170,
+            "step_in_task": 77,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6485629548112573
+        },
+        {
+            "global_step": 171,
+            "step_in_task": 78,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6488675820853842
+        },
+        {
+            "global_step": 172,
+            "step_in_task": 79,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6493213629209083
+        },
+        {
+            "global_step": 173,
+            "step_in_task": 80,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6498043599065737
+        },
+        {
+            "global_step": 174,
+            "step_in_task": 81,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6501348122292436
+        },
+        {
+            "global_step": 175,
+            "step_in_task": 82,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6507672043892012
+        },
+        {
+            "global_step": 176,
+            "step_in_task": 83,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6510888090057028
+        },
+        {
+            "global_step": 177,
+            "step_in_task": 84,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6515355698267484
+        },
+        {
+            "global_step": 178,
+            "step_in_task": 85,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6521349201738498
+        },
+        {
+            "global_step": 179,
+            "step_in_task": 86,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.652465887098585
+        },
+        {
+            "global_step": 180,
+            "step_in_task": 87,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6526285657640445
+        },
+        {
+            "global_step": 181,
+            "step_in_task": 88,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.652733814245718
+        },
+        {
+            "global_step": 182,
+            "step_in_task": 89,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6527114305772141
+        },
+        {
+            "global_step": 183,
+            "step_in_task": 90,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6527878799063518
+        },
+        {
+            "global_step": 184,
+            "step_in_task": 91,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6528174646206173
+        },
+        {
+            "global_step": 185,
+            "step_in_task": 92,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6530123686910783
+        },
+        {
+            "global_step": 186,
+            "step_in_task": 93,
+            "task_id": 1,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.6535597831697304
+        },
+        {
+            "global_step": 218,
+            "step_in_task": 32,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4716658620052048
+        },
+        {
+            "global_step": 219,
+            "step_in_task": 33,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.4950035028322912
+        },
+        {
+            "global_step": 220,
+            "step_in_task": 34,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5171773472140795
+        },
+        {
+            "global_step": 221,
+            "step_in_task": 35,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5377463677389305
+        },
+        {
+            "global_step": 222,
+            "step_in_task": 36,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.557567252132984
+        },
+        {
+            "global_step": 223,
+            "step_in_task": 37,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5762019139775318
+        },
+        {
+            "global_step": 224,
+            "step_in_task": 38,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5932637120245232
+        },
+        {
+            "global_step": 225,
+            "step_in_task": 39,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6101756112537065
+        },
+        {
+            "global_step": 226,
+            "step_in_task": 40,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6273051988043268
+        },
+        {
+            "global_step": 227,
+            "step_in_task": 41,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6443406564309742
+        },
+        {
+            "global_step": 228,
+            "step_in_task": 42,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6609116793363274
+        },
+        {
+            "global_step": 229,
+            "step_in_task": 43,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6763477109972984
+        },
+        {
+            "global_step": 230,
+            "step_in_task": 44,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6906507345887776
+        },
+        {
+            "global_step": 231,
+            "step_in_task": 45,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7035386574020652
+        },
+        {
+            "global_step": 232,
+            "step_in_task": 46,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7159565769446223
+        },
+        {
+            "global_step": 233,
+            "step_in_task": 47,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7285329041991293
+        },
+        {
+            "global_step": 234,
+            "step_in_task": 48,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7399044607170644
+        },
+        {
+            "global_step": 235,
+            "step_in_task": 49,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7506361964045456
+        },
+        {
+            "global_step": 236,
+            "step_in_task": 50,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7617751031096778
+        },
+        {
+            "global_step": 237,
+            "step_in_task": 51,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7731675263384608
+        },
+        {
+            "global_step": 238,
+            "step_in_task": 52,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7841959186811613
+        },
+        {
+            "global_step": 239,
+            "step_in_task": 53,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7955619228105772
+        },
+        {
+            "global_step": 240,
+            "step_in_task": 54,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.80666747202128
+        },
+        {
+            "global_step": 241,
+            "step_in_task": 55,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8174345146462503
+        },
+        {
+            "global_step": 242,
+            "step_in_task": 56,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8279876593714597
+        },
+        {
+            "global_step": 243,
+            "step_in_task": 57,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8383124568728646
+        },
+        {
+            "global_step": 244,
+            "step_in_task": 58,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8481352015956487
+        },
+        {
+            "global_step": 245,
+            "step_in_task": 59,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8573853823088398
+        },
+        {
+            "global_step": 246,
+            "step_in_task": 60,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8675769712452137
+        },
+        {
+            "global_step": 247,
+            "step_in_task": 61,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.877927820816739
+        },
+        {
+            "global_step": 248,
+            "step_in_task": 62,
+            "task_id": 2,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8880444740043056
+        },
+        {
+            "global_step": 249,
+            "step_in_task": 63,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8988471889147043
+        },
+        {
+            "global_step": 250,
+            "step_in_task": 64,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9017863000281836
+        },
+        {
+            "global_step": 251,
+            "step_in_task": 65,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9040871670991022
+        },
+        {
+            "global_step": 252,
+            "step_in_task": 66,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9058255662126156
+        },
+        {
+            "global_step": 253,
+            "step_in_task": 67,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9070070714679737
+        },
+        {
+            "global_step": 254,
+            "step_in_task": 68,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9077706588769872
+        },
+        {
+            "global_step": 255,
+            "step_in_task": 69,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9081382772170077
+        },
+        {
+            "global_step": 256,
+            "step_in_task": 70,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9083385661053354
+        },
+        {
+            "global_step": 257,
+            "step_in_task": 71,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9082351679927696
+        },
+        {
+            "global_step": 258,
+            "step_in_task": 72,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.908090362125891
+        },
+        {
+            "global_step": 259,
+            "step_in_task": 73,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.907577551936443
+        },
+        {
+            "global_step": 260,
+            "step_in_task": 74,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.90685092480955
+        },
+        {
+            "global_step": 261,
+            "step_in_task": 75,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9059738131077155
+        },
+        {
+            "global_step": 262,
+            "step_in_task": 76,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9052393439491646
+        },
+        {
+            "global_step": 263,
+            "step_in_task": 77,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9044326073617592
+        },
+        {
+            "global_step": 264,
+            "step_in_task": 78,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9037080414373213
+        },
+        {
+            "global_step": 265,
+            "step_in_task": 79,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.902909390602529
+        },
+        {
+            "global_step": 266,
+            "step_in_task": 80,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9019679309271031
+        },
+        {
+            "global_step": 267,
+            "step_in_task": 81,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9009544774968112
+        },
+        {
+            "global_step": 268,
+            "step_in_task": 82,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8998162503271518
+        },
+        {
+            "global_step": 269,
+            "step_in_task": 83,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8987204111306981
+        },
+        {
+            "global_step": 270,
+            "step_in_task": 84,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8976808708626707
+        },
+        {
+            "global_step": 271,
+            "step_in_task": 85,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8966539004661418
+        },
+        {
+            "global_step": 272,
+            "step_in_task": 86,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8955705638209173
+        },
+        {
+            "global_step": 273,
+            "step_in_task": 87,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8946077498495504
+        },
+        {
+            "global_step": 274,
+            "step_in_task": 88,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8934121518445957
+        },
+        {
+            "global_step": 275,
+            "step_in_task": 89,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.892008675587783
+        },
+        {
+            "global_step": 276,
+            "step_in_task": 90,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8907068738273256
+        },
+        {
+            "global_step": 277,
+            "step_in_task": 91,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8895537293527613
+        },
+        {
+            "global_step": 278,
+            "step_in_task": 92,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8884160219604806
+        },
+        {
+            "global_step": 279,
+            "step_in_task": 93,
+            "task_id": 2,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.8871201395261956
+        },
+        {
+            "global_step": 311,
+            "step_in_task": 32,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5677547078993792
+        },
+        {
+            "global_step": 312,
+            "step_in_task": 33,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.5901476027236816
+        },
+        {
+            "global_step": 313,
+            "step_in_task": 34,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6112088902024588
+        },
+        {
+            "global_step": 314,
+            "step_in_task": 35,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6308009385586835
+        },
+        {
+            "global_step": 315,
+            "step_in_task": 36,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6491361045617323
+        },
+        {
+            "global_step": 316,
+            "step_in_task": 37,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6659061624001394
+        },
+        {
+            "global_step": 317,
+            "step_in_task": 38,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6812280917047546
+        },
+        {
+            "global_step": 318,
+            "step_in_task": 39,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6955020434361956
+        },
+        {
+            "global_step": 319,
+            "step_in_task": 40,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7092816391312107
+        },
+        {
+            "global_step": 320,
+            "step_in_task": 41,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.722430185970666
+        },
+        {
+            "global_step": 321,
+            "step_in_task": 42,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7351667808125557
+        },
+        {
+            "global_step": 322,
+            "step_in_task": 43,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.747450754612018
+        },
+        {
+            "global_step": 323,
+            "step_in_task": 44,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.759583129268735
+        },
+        {
+            "global_step": 324,
+            "step_in_task": 45,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7712694974094887
+        },
+        {
+            "global_step": 325,
+            "step_in_task": 46,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7830252919096115
+        },
+        {
+            "global_step": 326,
+            "step_in_task": 47,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7945502488501097
+        },
+        {
+            "global_step": 327,
+            "step_in_task": 48,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.806152734604314
+        },
+        {
+            "global_step": 328,
+            "step_in_task": 49,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8174681377007949
+        },
+        {
+            "global_step": 329,
+            "step_in_task": 50,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.828776707495766
+        },
+        {
+            "global_step": 330,
+            "step_in_task": 51,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8392429360420728
+        },
+        {
+            "global_step": 331,
+            "step_in_task": 52,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8488916219957767
+        },
+        {
+            "global_step": 332,
+            "step_in_task": 53,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8586499609751093
+        },
+        {
+            "global_step": 333,
+            "step_in_task": 54,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8685937662465146
+        },
+        {
+            "global_step": 334,
+            "step_in_task": 55,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8784219787888032
+        },
+        {
+            "global_step": 335,
+            "step_in_task": 56,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.887744508231496
+        },
+        {
+            "global_step": 336,
+            "step_in_task": 57,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8967350682118291
+        },
+        {
+            "global_step": 337,
+            "step_in_task": 58,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9058596057856523
+        },
+        {
+            "global_step": 338,
+            "step_in_task": 59,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9147899580928496
+        },
+        {
+            "global_step": 339,
+            "step_in_task": 60,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.924031064420443
+        },
+        {
+            "global_step": 340,
+            "step_in_task": 61,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.933504277384479
+        },
+        {
+            "global_step": 341,
+            "step_in_task": 62,
+            "task_id": 3,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.942934710383142
+        },
+        {
+            "global_step": 342,
+            "step_in_task": 63,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9521982032554368
+        },
+        {
+            "global_step": 343,
+            "step_in_task": 64,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9548242467964307
+        },
+        {
+            "global_step": 344,
+            "step_in_task": 65,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.95660483783933
+        },
+        {
+            "global_step": 345,
+            "step_in_task": 66,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9578152661768284
+        },
+        {
+            "global_step": 346,
+            "step_in_task": 67,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.958181362594283
+        },
+        {
+            "global_step": 347,
+            "step_in_task": 68,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.958130411937883
+        },
+        {
+            "global_step": 348,
+            "step_in_task": 69,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.957594035846268
+        },
+        {
+            "global_step": 349,
+            "step_in_task": 70,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9567623196350574
+        },
+        {
+            "global_step": 350,
+            "step_in_task": 71,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9557065799209306
+        },
+        {
+            "global_step": 351,
+            "step_in_task": 72,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9543374801834452
+        },
+        {
+            "global_step": 352,
+            "step_in_task": 73,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9527380860467587
+        },
+        {
+            "global_step": 353,
+            "step_in_task": 74,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.95097230080561
+        },
+        {
+            "global_step": 354,
+            "step_in_task": 75,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.949119048349498
+        },
+        {
+            "global_step": 355,
+            "step_in_task": 76,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9473984712704167
+        },
+        {
+            "global_step": 356,
+            "step_in_task": 77,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9454062240114287
+        },
+        {
+            "global_step": 357,
+            "step_in_task": 78,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9433109493068772
+        },
+        {
+            "global_step": 358,
+            "step_in_task": 79,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9409239846862072
+        },
+        {
+            "global_step": 359,
+            "step_in_task": 80,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9385578777448327
+        },
+        {
+            "global_step": 360,
+            "step_in_task": 81,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9360444418647207
+        },
+        {
+            "global_step": 361,
+            "step_in_task": 82,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9335625448502511
+        },
+        {
+            "global_step": 362,
+            "step_in_task": 83,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9310469860267874
+        },
+        {
+            "global_step": 363,
+            "step_in_task": 84,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.92864424481551
+        },
+        {
+            "global_step": 364,
+            "step_in_task": 85,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9263585615192178
+        },
+        {
+            "global_step": 365,
+            "step_in_task": 86,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9241941810554124
+        },
+        {
+            "global_step": 366,
+            "step_in_task": 87,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9222028431352136
+        },
+        {
+            "global_step": 367,
+            "step_in_task": 88,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9202097012933512
+        },
+        {
+            "global_step": 368,
+            "step_in_task": 89,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9183009859208464
+        },
+        {
+            "global_step": 369,
+            "step_in_task": 90,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9164926312351833
+        },
+        {
+            "global_step": 370,
+            "step_in_task": 91,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.91455379233869
+        },
+        {
+            "global_step": 371,
+            "step_in_task": 92,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9126267551470846
+        },
+        {
+            "global_step": 372,
+            "step_in_task": 93,
+            "task_id": 3,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9109187476531702
+        },
+        {
+            "global_step": 404,
+            "step_in_task": 32,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.594335558320075
+        },
+        {
+            "global_step": 405,
+            "step_in_task": 33,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6169601936621723
+        },
+        {
+            "global_step": 406,
+            "step_in_task": 34,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.638167596389274
+        },
+        {
+            "global_step": 407,
+            "step_in_task": 35,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.658643375686157
+        },
+        {
+            "global_step": 408,
+            "step_in_task": 36,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.6775671575278623
+        },
+        {
+            "global_step": 409,
+            "step_in_task": 37,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.694963704158122
+        },
+        {
+            "global_step": 410,
+            "step_in_task": 38,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.710987033192299
+        },
+        {
+            "global_step": 411,
+            "step_in_task": 39,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7249943145929505
+        },
+        {
+            "global_step": 412,
+            "step_in_task": 40,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.739293480410457
+        },
+        {
+            "global_step": 413,
+            "step_in_task": 41,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7536417301273202
+        },
+        {
+            "global_step": 414,
+            "step_in_task": 42,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7678276950145384
+        },
+        {
+            "global_step": 415,
+            "step_in_task": 43,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.7815853872896663
+        },
+        {
+            "global_step": 416,
+            "step_in_task": 44,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.794177404267979
+        },
+        {
+            "global_step": 417,
+            "step_in_task": 45,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8070789841500152
+        },
+        {
+            "global_step": 418,
+            "step_in_task": 46,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8200738749430112
+        },
+        {
+            "global_step": 419,
+            "step_in_task": 47,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.83260477499492
+        },
+        {
+            "global_step": 420,
+            "step_in_task": 48,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8444817306345584
+        },
+        {
+            "global_step": 421,
+            "step_in_task": 49,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8549643064228079
+        },
+        {
+            "global_step": 422,
+            "step_in_task": 50,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8649575936838962
+        },
+        {
+            "global_step": 423,
+            "step_in_task": 51,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8749028915848749
+        },
+        {
+            "global_step": 424,
+            "step_in_task": 52,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.8847180498868572
+        },
+        {
+            "global_step": 425,
+            "step_in_task": 53,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.894010139351932
+        },
+        {
+            "global_step": 426,
+            "step_in_task": 54,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9028091551649027
+        },
+        {
+            "global_step": 427,
+            "step_in_task": 55,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9112418182154574
+        },
+        {
+            "global_step": 428,
+            "step_in_task": 56,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9188537211800136
+        },
+        {
+            "global_step": 429,
+            "step_in_task": 57,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9259641136878909
+        },
+        {
+            "global_step": 430,
+            "step_in_task": 58,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.934064279006273
+        },
+        {
+            "global_step": 431,
+            "step_in_task": 59,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9426671129816733
+        },
+        {
+            "global_step": 432,
+            "step_in_task": 60,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.951155135032319
+        },
+        {
+            "global_step": 433,
+            "step_in_task": 61,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9596768122427062
+        },
+        {
+            "global_step": 434,
+            "step_in_task": 62,
+            "task_id": 4,
+            "epoch": 1,
+            "lr": 0.0075,
+            "lambda_prox": 0.05,
+            "param_drift": 1.9678662252202648
+        },
+        {
+            "global_step": 435,
+            "step_in_task": 63,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9752235174452124
+        },
+        {
+            "global_step": 436,
+            "step_in_task": 64,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.976847172486842
+        },
+        {
+            "global_step": 437,
+            "step_in_task": 65,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9777191532219045
+        },
+        {
+            "global_step": 438,
+            "step_in_task": 66,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.97820583735019
+        },
+        {
+            "global_step": 439,
+            "step_in_task": 67,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9781550582998249
+        },
+        {
+            "global_step": 440,
+            "step_in_task": 68,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.977813126681761
+        },
+        {
+            "global_step": 441,
+            "step_in_task": 69,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9772893872827104
+        },
+        {
+            "global_step": 442,
+            "step_in_task": 70,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9764582122083814
+        },
+        {
+            "global_step": 443,
+            "step_in_task": 71,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.975514488653591
+        },
+        {
+            "global_step": 444,
+            "step_in_task": 72,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9745103243351176
+        },
+        {
+            "global_step": 445,
+            "step_in_task": 73,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9732953462120633
+        },
+        {
+            "global_step": 446,
+            "step_in_task": 74,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9719158629152291
+        },
+        {
+            "global_step": 447,
+            "step_in_task": 75,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9701829794253363
+        },
+        {
+            "global_step": 448,
+            "step_in_task": 76,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9682747287552123
+        },
+        {
+            "global_step": 449,
+            "step_in_task": 77,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9660010830329842
+        },
+        {
+            "global_step": 450,
+            "step_in_task": 78,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9636609999714285
+        },
+        {
+            "global_step": 451,
+            "step_in_task": 79,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9612673851481692
+        },
+        {
+            "global_step": 452,
+            "step_in_task": 80,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9587767796231632
+        },
+        {
+            "global_step": 453,
+            "step_in_task": 81,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9563325067132653
+        },
+        {
+            "global_step": 454,
+            "step_in_task": 82,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9538794095271363
+        },
+        {
+            "global_step": 455,
+            "step_in_task": 83,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9512867643136487
+        },
+        {
+            "global_step": 456,
+            "step_in_task": 84,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9483919803140162
+        },
+        {
+            "global_step": 457,
+            "step_in_task": 85,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.945644544218523
+        },
+        {
+            "global_step": 458,
+            "step_in_task": 86,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9427022786318813
+        },
+        {
+            "global_step": 459,
+            "step_in_task": 87,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.939810361499946
+        },
+        {
+            "global_step": 460,
+            "step_in_task": 88,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9369598573569924
+        },
+        {
+            "global_step": 461,
+            "step_in_task": 89,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9343763015377553
+        },
+        {
+            "global_step": 462,
+            "step_in_task": 90,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.931644462595137
+        },
+        {
+            "global_step": 463,
+            "step_in_task": 91,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9289459029861702
+        },
+        {
+            "global_step": 464,
+            "step_in_task": 92,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.926255529471252
+        },
+        {
+            "global_step": 465,
+            "step_in_task": 93,
+            "task_id": 4,
+            "epoch": 2,
+            "lr": 0.002500000000000001,
+            "lambda_prox": 0.1,
+            "param_drift": 1.9237166159404242
+        }
+    ]
+}

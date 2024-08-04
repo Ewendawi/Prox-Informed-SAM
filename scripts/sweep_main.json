@@ -1,0 +1,35 @@
+{
+    "name": "proposal_v2",
+    "configs": [
+        {
+            "name": "1_baseline_replay",
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "2_prox_only_lambda",
+            "lambda_prox": 10.0,
+            "use_sam": false
+        },
+        {
+            "name": "3_sam_only_rho",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.05
+        },
+        {
+            "name": "4_naive_comb_lambda",
+            "lambda_prox": 10.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "use_coupling": false
+        },
+        {
+            "name": "5_unified_lambda",
+            "lambda_prox": 10.0,
+            "use_sam": true,
+            "coupling_alpha": 0.05,
+            "use_coupling": true
+        }
+    ]
+}

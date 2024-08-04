@@ -1,0 +1,256 @@
+{
+    "forgetting": 16.625,
+    "learning_success": 25.7,
+    "retention_ratio": 0.48249027237354086,
+    "stability_gap": 8.6935,
+    "peak_drop": 13.5,
+    "first_drop": 10.35,
+    "last_drop": 6.8,
+    "recovery_time_median": 500.0,
+    "recovery_rate": 0.1,
+    "recovery_window": 500,
+    "recovery_scale": 0.95,
+    "sg_window_steps": 100,
+    "acc_bounds": [
+        0.0,
+        100.0
+    ],
+    "acc_auc_norm_mean": 15.838936950146628,
+    "acc_auc_ratio_01_mean": 0.1583893695014663,
+    "per_task_metrics": {
+        "0": {
+            "peak_drop": [
+                20.0,
+                14.5,
+                10.5,
+                9.0
+            ],
+            "recovery_time": [
+                500,
+                500,
+                500,
+                500
+            ],
+            "sg_area": [
+                11.555,
+                11.15,
+                6.31,
+                3.605
+            ],
+            "first_drop": [
+                20.0,
+                14.0,
+                9.0,
+                2.0
+            ],
+            "last_drop": [
+                7.5,
+                9.0,
+                3.0,
+                4.0
+            ],
+            "acc_auc": 6888.0,
+            "acc_auc_norm": 15.870967741935484,
+            "acc_auc_ratio_01": 0.15870967741935485
+        },
+        "1": {
+            "peak_drop": [
+                11.0,
+                6.0,
+                11.5
+            ],
+            "recovery_time": [
+                500,
+                93,
+                500
+            ],
+            "sg_area": [
+                6.7,
+                2.895,
+                5.66
+            ],
+            "first_drop": [
+                2.5,
+                4.5,
+                5.5
+            ],
+            "last_drop": [
+                8.5,
+                0.0,
+                3.0
+            ],
+            "acc_auc": 4260.0,
+            "acc_auc_norm": 12.49266862170088,
+            "acc_auc_ratio_01": 0.1249266862170088
+        },
+        "2": {
+            "peak_drop": [
+                17.0,
+                13.5
+            ],
+            "recovery_time": [
+                500,
+                500
+            ],
+            "sg_area": [
+                11.855,
+                8.725
+            ],
+            "first_drop": [
+                17.0,
+                8.5
+            ],
+            "last_drop": [
+                8.0,
+                7.5
+            ],
+            "acc_auc": 2838.5,
+            "acc_auc_norm": 11.445564516129032,
+            "acc_auc_ratio_01": 0.11445564516129032
+        },
+        "3": {
+            "peak_drop": [
+                22.0
+            ],
+            "recovery_time": [
+                500
+            ],
+            "sg_area": [
+                18.48
+            ],
+            "first_drop": [
+                20.5
+            ],
+            "last_drop": [
+                17.5
+            ],
+            "acc_auc": 2813.5,
+            "acc_auc_norm": 18.151612903225807,
+            "acc_auc_ratio_01": 0.18151612903225808
+        },
+        "4": {
+            "peak_drop": [],
+            "recovery_time": [],
+            "sg_area": [],
+            "first_drop": [],
+            "last_drop": [],
+            "acc_auc": 1316.5,
+            "acc_auc_norm": 21.233870967741936,
+            "acc_auc_ratio_01": 0.21233870967741936
+        }
+    },
+    "all_sg_areas": [
+        11.555,
+        11.15,
+        6.31,
+        3.605,
+        6.7,
+        2.895,
+        5.66,
+        11.855,
+        8.725,
+        18.48
+    ],
+    "all_peak_drops": [
+        20.0,
+        14.5,
+        10.5,
+        9.0,
+        11.0,
+        6.0,
+        11.5,
+        17.0,
+        13.5,
+        22.0
+    ],
+    "all_first_drops": [
+        20.0,
+        14.0,
+        9.0,
+        2.0,
+        2.5,
+        4.5,
+        5.5,
+        17.0,
+        8.5,
+        20.5
+    ],
+    "all_last_drops": [
+        7.5,
+        9.0,
+        3.0,
+        4.0,
+        8.5,
+        0.0,
+        3.0,
+        8.0,
+        7.5,
+        17.5
+    ],
+    "all_recovery_times": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        93,
+        500,
+        500,
+        500,
+        500
+    ],
+    "switch_steps": [
+        93,
+        186,
+        279,
+        372
+    ],
+    "final_step": 465,
+    "config": {
+        "data_root": "./data",
+        "output_dir": "results/debug",
+        "seed": 4201,
+        "n_tasks": 5,
+        "batch_size": 64,
+        "epochs": 3,
+        "lr": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "lambda_prox": 0.1,
+        "lambda_schedule": "inc_linear",
+        "lambda_warmup_power": 1.0,
+        "prox_start_epoch": 0,
+        "prox_backbone_only": true,
+        "prox_exclude_bn": true,
+        "use_sam": false,
+        "sam_epochs": 1,
+        "sam_phase": "last",
+        "rho_base": 0.5,
+        "sam_bn_mode": "momentum0",
+        "sam_batch_mode": "split",
+        "use_kl_tr": false,
+        "kl_beta_init": 0.1,
+        "kl_temp": 1.0,
+        "kl_value_clip": 10.0,
+        "kl_source": "mem",
+        "kl_start_epoch": 0,
+        "use_coupling": false,
+        "coupling_mode": "grad_ratio",
+        "delta_gamma": null,
+        "delta_ema_beta": 0.1,
+        "grad_ratio_beta": 0.5,
+        "grad_ratio_eps": 1e-12,
+        "debug_prox": true,
+        "debug_sam": false,
+        "debug_every_n_steps": 1,
+        "recovery_window": 500,
+        "recovery_scale": 0.95,
+        "eval_every_n_batches": 50,
+        "buffer_size": 5000,
+        "replay_ratio": 0.5,
+        "use_decoupled": false,
+        "grad_ratio_alpha": 0.5,
+        "train_per_task": 1000,
+        "test_per_task": 200
+    }
+}

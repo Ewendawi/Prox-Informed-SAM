@@ -1,0 +1,68 @@
+{
+    "name": "naive_combination_grid",
+    "configs": [
+        {
+            "name": "4_naive_lambda0.03_rho0.015",
+            "lambda_prox": 0.03,
+            "use_sam": true,
+            "rho_base": 0.015,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda0.03_rho0.05",
+            "lambda_prox": 0.03,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda0.03_rho0.1",
+            "lambda_prox": 0.03,
+            "use_sam": true,
+            "rho_base": 0.1,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda0.3_rho0.015",
+            "lambda_prox": 0.3,
+            "use_sam": true,
+            "rho_base": 0.015,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda0.3_rho0.05",
+            "lambda_prox": 0.3,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda0.3_rho0.1",
+            "lambda_prox": 0.3,
+            "use_sam": true,
+            "rho_base": 0.1,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda1.0_rho0.015",
+            "lambda_prox": 1.0,
+            "use_sam": true,
+            "rho_base": 0.015,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda1.0_rho0.05",
+            "lambda_prox": 1.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "use_coupling": false
+        },
+        {
+            "name": "4_naive_lambda1.0_rho0.1",
+            "lambda_prox": 1.0,
+            "use_sam": true,
+            "rho_base": 0.1,
+            "use_coupling": false
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "tuning_rho_sam",
+    "configs": [
+        {
+            "name": "3_sam_only_rho0.01",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.01
+        },
+        {
+            "name": "3_sam_only_rho0.03",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.03
+        },
+        {
+            "name": "3_sam_only_rho0.07",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.07
+        },
+        {
+            "name": "3_sam_only_rho0.1",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.1
+        },
+        {
+            "name": "3_sam_only_rho0.5",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.5
+        },
+        {
+            "name": "3_sam_only_rho2.0",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 2.0
+        },
+        {
+            "name": "3_sam_only_rho5.0",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 5.0
+        }
+    ]
+}

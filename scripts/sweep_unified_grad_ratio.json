@@ -1,0 +1,53 @@
+{
+    "name": "unified_grad_ratio_sweep",
+    "configs": [
+        {
+            "name": "unified_gradratio_lambda0.1_beta4.0",
+            "lambda_prox": 0.1,
+            "use_sam": true,
+            "sam_batch_mode": "split",
+            "use_coupling": true,
+            "coupling_mode": "grad_ratio",
+            "grad_ratio_beta": 4.0,
+            "grad_ratio_eps": 1e-12,
+            "rho_max": 0.5,
+            "debug_sam": true
+        },
+        {
+            "name": "unified_gradratio_lambda0.1_beta16.0",
+            "lambda_prox": 0.1,
+            "use_sam": true,
+            "sam_batch_mode": "split",
+            "use_coupling": true,
+            "coupling_mode": "grad_ratio",
+            "grad_ratio_beta": 16.0,
+            "grad_ratio_eps": 1e-12,
+            "rho_max": 0.5,
+            "debug_sam": true
+        },
+        {
+            "name": "unified_gradratio_lambda0.3_beta4.0",
+            "lambda_prox": 0.3,
+            "use_sam": true,
+            "sam_batch_mode": "split",
+            "use_coupling": true,
+            "coupling_mode": "grad_ratio",
+            "grad_ratio_beta": 4.0,
+            "grad_ratio_eps": 1e-12,
+            "rho_max": 0.5,
+            "debug_sam": true
+        },
+        {
+            "name": "unified_gradratio_lambda0.3_beta16.0",
+            "lambda_prox": 0.3,
+            "use_sam": true,
+            "sam_batch_mode": "split",
+            "use_coupling": true,
+            "coupling_mode": "grad_ratio",
+            "grad_ratio_beta": 16.0,
+            "grad_ratio_eps": 1e-12,
+            "rho_max": 0.5,
+            "debug_sam": true
+        }
+    ]
+}

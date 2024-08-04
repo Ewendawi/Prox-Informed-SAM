@@ -1,0 +1,41 @@
+{
+    "name": "unified_delta_ema_sweep",
+    "configs": [
+        {
+            "name": "unified_ema_lambda0.03_gamma0.15",
+            "lambda_prox": 0.03,
+            "use_sam": true,
+            "sam_batch_mode": "split",
+            "use_coupling": true,
+            "coupling_mode": "delta_ema",
+            "delta_gamma": 0.15,
+            "delta_ema_beta": 0.1,
+            "rho_max": 5.0,
+            "debug_sam": true
+        },
+        {
+            "name": "unified_ema_lambda0.03_gamma0.2",
+            "lambda_prox": 0.03,
+            "use_sam": true,
+            "sam_batch_mode": "split",
+            "use_coupling": true,
+            "coupling_mode": "delta_ema",
+            "delta_gamma": 0.2,
+            "delta_ema_beta": 0.1,
+            "rho_max": 5.0,
+            "debug_sam": true
+        },
+        {
+            "name": "unified_ema_lambda0.03_gamma0.5",
+            "lambda_prox": 0.03,
+            "use_sam": true,
+            "sam_batch_mode": "split",
+            "use_coupling": true,
+            "coupling_mode": "delta_ema",
+            "delta_gamma": 0.5,
+            "delta_ema_beta": 0.1,
+            "rho_max": 5.0,
+            "debug_sam": true
+        }
+    ]
+}

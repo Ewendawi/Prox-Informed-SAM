@@ -1,0 +1,150 @@
+{
+    "name": "diagnose_sam_phase_x_rho",
+    "configs": [
+        {
+            "name": "diag_phase_rho_first_rho0.005",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.005,
+            "sam_epochs": 3,
+            "sam_phase": "first",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_first_rho0.01",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.01,
+            "sam_epochs": 3,
+            "sam_phase": "first",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_first_rho0.02",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.02,
+            "sam_epochs": 3,
+            "sam_phase": "first",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_first_rho0.05",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "sam_epochs": 3,
+            "sam_phase": "first",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_first_rho0.1",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.1,
+            "sam_epochs": 3,
+            "sam_phase": "first",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_first_rho0.2",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.2,
+            "sam_epochs": 3,
+            "sam_phase": "first",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_last_rho0.005",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.005,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_last_rho0.01",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.01,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_last_rho0.02",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.02,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_last_rho0.05",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_last_rho0.1",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.1,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_phase_rho_last_rho0.2",
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.2,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        }
+    ]
+}
+

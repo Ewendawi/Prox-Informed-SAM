@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prox-sam-cl"
+version = "0.1.0"
+description = "Skeleton project for prox-sam-cl experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [
+  { name = "Lee" }
+]
+dependencies = [
+  "numpy",
+  "torch",
+  "torchvision",
+  "scipy",
+  "tqdm",
+  "matplotlib"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["prox_sam*", "scripts"]

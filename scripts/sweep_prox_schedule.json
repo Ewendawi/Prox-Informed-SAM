@@ -1,0 +1,41 @@
+{
+    "name": "sweep_prox_schedule",
+    "configs": [
+        {
+            "name": "prox0.03_const_no_bn",
+            "lambda_prox": 0.03,
+            "lambda_schedule": "constant",
+            "prox_backbone_only": true,
+            "use_sam": false,
+            "debug_prox": true,
+            "prox_exclude_bn": true
+        },
+        {
+            "name": "prox0.03_const_bn",
+            "lambda_prox": 0.03,
+            "lambda_schedule": "constant",
+            "prox_backbone_only": true,
+            "use_sam": false,
+            "debug_prox": true,
+            "prox_exclude_bn": false
+        },
+        {
+            "name": "prox0.03_cosine_no_bn",
+            "lambda_prox": 0.03,
+            "lambda_schedule": "inc_cosine",
+            "prox_backbone_only": true,
+            "use_sam": false,
+            "debug_prox": true,
+            "prox_exclude_bn": true
+        },
+        {
+            "name": "prox0.03_cosine_bn",
+            "lambda_prox": 0.03,
+            "lambda_schedule": "inc_cosine",
+            "prox_backbone_only": true,
+            "use_sam": false,
+            "debug_prox": true,
+            "prox_exclude_bn": false
+        }
+    ]
+}

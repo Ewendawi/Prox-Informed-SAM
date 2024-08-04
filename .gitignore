@@ -1,0 +1,10 @@
+.vscode
+__pycache__/
+*egg-info/
+dist/
+
+.cache/
+.mplconfig/
+
+/data/
+*pack.zip

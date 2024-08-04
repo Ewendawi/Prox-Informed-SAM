@@ -1,0 +1,82 @@
+{
+    "name": "diagnose_replay_ratio_with_sam",
+    "configs": [
+        {
+            "name": "diag_replay_ratio0.0_no_sam",
+            "replay_ratio": 0.0,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "diag_replay_ratio0.0_sam_last_rho0.05",
+            "replay_ratio": 0.0,
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_replay_ratio0.2_no_sam",
+            "replay_ratio": 0.2,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "diag_replay_ratio0.2_sam_last_rho0.05",
+            "replay_ratio": 0.2,
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_replay_ratio0.5_no_sam",
+            "replay_ratio": 0.5,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "diag_replay_ratio0.5_sam_last_rho0.05",
+            "replay_ratio": 0.5,
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        },
+        {
+            "name": "diag_replay_ratio0.8_no_sam",
+            "replay_ratio": 0.8,
+            "lambda_prox": 0.0,
+            "use_sam": false
+        },
+        {
+            "name": "diag_replay_ratio0.8_sam_last_rho0.05",
+            "replay_ratio": 0.8,
+            "lambda_prox": 0.0,
+            "use_sam": true,
+            "rho_base": 0.05,
+            "sam_epochs": 3,
+            "sam_phase": "last",
+            "sam_batch_mode": "all",
+            "sam_bn_mode": "momentum0",
+            "debug_sam": true,
+            "debug_every_n_steps": 5
+        }
+    ]
+}
+

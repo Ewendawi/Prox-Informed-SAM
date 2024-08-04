@@ -1,0 +1,61 @@
+{
+    "name": "tuning_lambda_prox",
+    "configs": [
+        {
+            "name": "1_prox_only_lambda0.05",
+            "lambda_prox": 0.05,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        },
+        {
+            "name": "2_prox_only_lambda0.1",
+            "lambda_prox": 0.1,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        },
+        {
+            "name": "2_prox_only_lambda0.3",
+            "lambda_prox": 0.3,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        },
+        {
+            "name": "2_prox_only_lambda0.7",
+            "lambda_prox": 0.7,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        },
+        {
+            "name": "2_prox_only_lambda1.0",
+            "lambda_prox": 1.0,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        },
+        {
+            "name": "2_prox_only_lambda2.0",
+            "lambda_prox": 2.0,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        },
+        {
+            "name": "2_prox_only_lambda5.0",
+            "lambda_prox": 5.0,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        },
+        {
+            "name": "2_prox_only_lambda15.0",
+            "lambda_prox": 15.0,
+            "use_sam": false,
+            "lambda_schedule": "lr",
+            "debug_prox": true
+        }
+    ]
+}
