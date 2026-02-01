@@ -26,16 +26,16 @@ This project proposes to _measure and optimize these two axes separately_:
 
 ## Prox-Informed SAM: Gradient-ratio coupling
 
-Let task gradient be $g_t=\nabla \mathcal{L}_{\text{task}}(\theta)$ on the SAM batch, and Prox gradient be $p_t=\nabla \mathcal{L}_{\text{prox}}(\theta)$, then:
+Let task gradient be $g_t=\nabla L_{\text{task}}(\theta)$ on the SAM batch, and Prox gradient be $p_t=\nabla L_{\text{prox}}(\theta)$, then:
 
 $$
 r_t=\frac{\|p_t\|}{\|g_t\|+\epsilon},
 \quad
-\rho_t = \mathrm{clip}\Big(\frac{\rho_{\max}}{1+\beta r_t},\ \rho_{\min},\ \rho_{\max}\Big).
+\rho_t = \text{clip}\Big(\frac{\rho_{\max}}{1+\beta r_t},\ \rho_{\min},\ \rho_{\max}\Big).
 $$
 
-**Intuition (why this coupling makes sense)**  
-Proximal regularization acts like a _stability fence_: when the current parameters have drifted away from an anchor (e.g., the weights saved at the last task switch), its gradient $p_t$ becomes large and “pulls back” toward that anchor. SAM, on the other hand, injects an adversarial perturbation of size $\rho$ to seek flatter solutions. If we keep $\rho$ fixed while Prox is strongly constraining updates, SAM wastes effort exploring directions that Prox will immediately undo (and can even increase switch-time shock).
+**Intuition**  
+Proximal regularization acts like a _stability fence_: when the current parameters have drifted away from an anchor (e.g., the weights saved at the last task switch), its gradient $p_t$ becomes large and “pulls back” toward that anchor. SAM, on the other hand, injects an adversarial perturbation of size $\rho$ to seek flatter solutions. If we keep $\rho$ fixed while Prox is strongly constraining updates, SAM wastes effort exploring directions that Prox will immediately undo and can even increase switch-time shock.
 
 The ratio
 
@@ -68,36 +68,37 @@ Let tasks be indexed by $t=1,\dots,T$. Let $s_t$ be the global step at the momen
 
 - **Long-term Forgetting (F)** (per task $k$):
 
-  $$
-  F_k = \max_{t\ge k} A_k(s_t^-) - A_k(s_T^+),
-  \qquad
-  F = \frac{1}{T}\sum_{k=1}^T F_k.
-  $$
+$$
+F_k = \max_{t\ge k} A_k(s_t^-) - A_k(s_T^+),
+\qquad
+F = \frac{1}{T}\sum_{k=1}^T F_k.
+$$
 
-  Intuition: how much each task drops from its best pre-switch accuracy to the final model.
+Intuition: how much each task drops from its best pre-switch accuracy to the final model.
 
 - **Learning Success (LS)** (classic accuracy-matrix diagonal average):
 
-  $$
-  LS = \frac{1}{T}\sum_{t=1}^T A_t(s_t^+).
-  $$
+$$
+LS = \frac{1}{T}\sum_{t=1}^T A_t(s_t^+).
+$$
 
 - **Retention Ratio**:
-  $$
-  \mathrm{RR} = \frac{\frac{1}{T}\sum_{k=1}^T A_k(s_T^+)}{LS}.
-  $$
+
+$$
+\text{RR} = \frac{\frac{1}{T}\sum_{k=1}^T A_k(s_T^+)}{LS}.
+$$
 
 #### Switch-time stability
 
 - **Stability Gap (SG)** (_area-under-drop_ in a fixed window after each switch):
 
-  $$
-  \mathrm{SG}^{\mathrm{area}}_{t}
-  =\frac{1}{t-1}\sum_{k<t}\frac{1}{W}\sum_{j=s_t}^{s_t+W}\big[A_k(s_t^-)-A_k(j)\big]_+,
-  \qquad [x]_+=\max(0,x).
-  $$
+$$
+\text{SG}^{\text{area}}_{t}
+=\frac{1}{t-1}\sum_{k<t}\frac{1}{W}\sum_{j=s_t}^{s_t+W}\big[A_k(s_t^-)-A_k(j)\big]_+,
+\qquad [x]_+=\max(0,x).
+$$
 
-  In code we compute the same quantity from discrete evaluation points (piecewise-constant integration) and then average across switches/tasks.
+In code we compute the same quantity from discrete evaluation points (piecewise-constant integration) and then average across switches/tasks.
 
 - **Drop diagnostics** (for each past task $k$ after switch at $s_t$; reference is $A_k(s_t^-)$):
   - **First Drop**: $\max(0, A_k(s_t^-)-A_k(\text{first eval after }s_t))$
